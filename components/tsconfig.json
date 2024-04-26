@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"]
+    },
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "target": "ES2020",
+    "declaration": true,
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "noUncheckedIndexedAccess": true,
+    "jsx": "react",
+    "noImplicitAny": true,
+    "declarationMap": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "include": ["src", "../styled-system", "../core"]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "@huspy/briks-web-components",
+    "version": "0.0.1",
+    "description": "package test for briks",
+    "author": "Camilo",
+    "license": "MIT",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "exports": {
+        ".": {
+            "source": "./src/index.ts",
+            "types": "./dist/index.d.ts",
+            "import": {
+                "types": "./dist/index.d.mts",
+                "default": "./dist/index.mjs"
+            },
+            "require": "./dist/index.js"
+        },
+        "./preset": {
+            "source": "./src/preset/preset.ts",
+            "types": "./dist/preset/preset.d.mts",
+            "import": {
+                "types": "./dist/preset/preset.d.mts",
+                "default": "./dist/preset/preset.mjs"
+            },
+            "require": "./dist/preset/preset.js"
+        }
+    },
+    "scripts": {
+        "prepare": "panda codegen",
+        "dev": "postcss src/index.css -o dist/index.css --watch",
+        "add-component": "npx @park-ui/cli add button",
+        "build": "tsup ./src"
+    },
+    "devDependencies": {
+        "@park-ui/panda-preset": "^0.37.0",
+        "@typescript-eslint/eslint-plugin": "^6.4.0",
+        "globals": "^15.0.0",
+        "ts-node": "^10.9.2",
+        "tsup": "^8.0.2",
+        "typescript": "*"
+    },
+    "dependencies": {
+        "@ark-ui/react": "^2.2.3",
+        "@pandacss/dev": "^0.37.1",
+        "@types/react": "^18.2.79",
+        "postcss": "^8.4.38",
+        "react": "^18.2.0"
+    }
+}

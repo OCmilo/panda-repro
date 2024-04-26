@@ -1,0 +1,18 @@
+export const fontSizesPrimitives = {
+  xs: '10px',
+  sm: '12px',
+  md: '14px',
+  lg: '16px',
+  xl: '18px',
+  '2xl': '20px',
+  '3xl': '24px',
+  '4xl': '28px',
+  '5xl': '32px',
+  '6xl': '36px',
+  h6: '40px',
+  h5: '48px',
+  h4: '56px',
+  h3: '64px',
+  h2: '72px',
+  h1: '80px',
+};

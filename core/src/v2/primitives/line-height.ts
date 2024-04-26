@@ -1,0 +1,18 @@
+export const lineHeightPrimtives = {
+  xs: '12px',
+  sm: '16px',
+  md: '20px',
+  lg: '24px',
+  xl: '26px',
+  '2xl': '28px',
+  '3xl': '32px',
+  '4xl': '36px',
+  '5xl': '40px',
+  '6xl': '44px',
+  '7xl': '50px',
+  '8xl': '58px',
+  '9xl': '66px',
+  '10xl': '74px',
+  '11xl': '82px',
+  '12xl': '92px',
+};
