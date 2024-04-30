@@ -9,5 +9,5 @@ export default defineConfig({
   dts: true,
   bundle: true,
   treeshake: true,
-  external: ["@huspy/lib-web-styled-system"],
+  external: ["@org/styled-system"],
 });
