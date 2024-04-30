@@ -8,22 +8,22 @@ import {
   letterSpacingPrimitives,
   fontFamiliesPrimitivies,
   secondaryColors,
-  tertiaryColors
-} from '../../../core/src/v2/primitives'
+  tertiaryColors,
+} from "../../../core/src/v2/primitives";
 import {
   colorsTokens,
   spacingTokens,
-  radiusTokens
-} from '../../../core/src/v2/tokens'
+  radiusTokens,
+} from "../../../core/src/v2/tokens";
 import { button } from "../components/button/button-recipe";
-import parkPreset from "@park-ui/panda-preset"
+import parkPreset from "@park-ui/panda-preset";
 import { format } from "../utils/mapToPandaFormat";
 
-export const briksPreset = definePreset({
+export const libraryPreset = definePreset({
   theme: {
     extend: {
       recipes: {
-        button
+        button,
       },
       tokens: {
         colors: format(colorsPrimitives).toToken(),
@@ -35,27 +35,25 @@ export const briksPreset = definePreset({
         fonts: format(fontFamiliesPrimitivies).toToken(),
       },
       semanticTokens: {
-        colors: format(colorsTokens).toSemanticToken('colors'),
-        spacing: format(spacingTokens).toSemanticToken('spacing'),
-        radii: format(radiusTokens).toSemanticToken('spacing'),
-      }
-    }
+        colors: format(colorsTokens).toSemanticToken("colors"),
+        spacing: format(spacingTokens).toSemanticToken("spacing"),
+        radii: format(radiusTokens).toSemanticToken("spacing"),
+      },
+    },
   },
   themes: {
-    secondary: {
-      extend: {
+    extend: {
+      secondary: {
         tokens: {
-          colors: format(secondaryColors).toToken()
-        }
-      }
+          colors: format(secondaryColors).toToken(),
+        },
+      },
+      tertiary: {
+        tokens: {
+          colors: format(tertiaryColors).toToken(),
+        },
+      },
     },
-    tertiary: {
-      extend: {
-        tokens: {
-          colors: format(tertiaryColors).toToken()
-        }
-      }
-    }
   },
-  presets: ['@pandacss/preset-base', parkPreset],
-})
+  presets: ["@pandacss/preset-base", parkPreset],
+});

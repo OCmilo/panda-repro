@@ -1,5 +1,5 @@
 {
-  "name": "@huspy/briks-web",
+  "name": "@huspy/lib-web",
   "private": true,
   "workspaces": [
     "./*"

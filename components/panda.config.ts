@@ -1,10 +1,10 @@
 import { defineConfig } from "@pandacss/dev";
-import { briksPreset } from "./src/preset/preset";
+import { libraryPreset } from "./src/preset/preset";
 
 export default defineConfig({
   preflight: true,
-  presets: [briksPreset],
+  presets: [libraryPreset],
   include: ["./src/**/*.{js,jsx,ts,tsx}"],
   outdir: "../styled-system",
-  jsxFramework: 'react'
+  jsxFramework: "react",
 });

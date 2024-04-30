@@ -1,5 +1,5 @@
 {
-  "name": "@huspy/briks-web-styled-system",
+  "name": "@org/styled-system",
   "version": "0.0.0",
   "type": "module",
   "exports": {
